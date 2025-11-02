@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M M</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="https://dl.dropboxusercontent.com/scl/fi/h4m9r1pc6gbj55olh2b4m/Ma-Tamannaitak-Mohammed-Abdu.mp3?rlkey=xsk3ml2n5r3uectwylvq2j5qx&dl=0" type="audio/mp3">
+    </audio>
+
+    <div id="passwordScreen">
+        <h2>ادخل كلمة المرور</h2>
+        <input type="password" id="passInput" placeholder="••••">
+    </div>
+
+    <div id="message" class="hidden">
+        <p class="text">
+        حبيبي ميمو، كل عام وانت اجمل شي مر على الدنيا 
+        اليوم مو يوم ميلادك وبس اليوم يوم ميلاد الفرحه اللي دخلت حياتي
+        ما اعرف كيف اشرح لك بس وجودك علمني معنى الطمأنينه
+        ومعنى ان الشخص يلقى احد يفهمه حتى لو ما تكلم
+
+        قبل اعرفك كنت اشوف الدنيا عاديه، روتين وهدوء
+        لين جيتني صار لكل لحظه طعم ولون
+
+        انا ممتنه للصدفه اللي قربتني منك
+        ممتنه لكل مره سمعتني فيها
+        ولكل كلمه رفعت فيها روحي
+        احب فيك انك تخليني اتطمن،
+        انك تفهم سكوتي قبل كلامي،
+        وانك حتى بزعلنا تحاول ترجعني اضحك
+
+        اليوم اتمنى لك ايام تشبه قلبك
+        نظيفه، دافيه، مليانه خير ونور
+        اتمنى احلامك تكبر وتتحقق
+        وتلقى قدامك الف باب ينفتح
+        لأن انسان زيك يستاهل كل شي جميل
+
+        واوعدك قدام ذي السنه وقدام عمرك الجديد
+        اني اكون سندك، حضنك اذا ضاق صدرك
+        وضحكتك لما الدنيا تعاندك
+        يمكن الحياه تتغير ويمكن الناس تتغير
+        بس حبي لك بيبقى ثابت
+
+        كل عام وانت بسبسي الحلو
+        وكل عام وانا اشوف ملامحك تكبر وتزداد حلاوه
+        وكل عام وانا احضنك من بعيد او قريب
+        وادعي بكل سجده ان الله يحفظك لي
+        ولا يكتب علي يوم بدونك
+
+        اليوم مو بس يوم ميلادك
+        اليوم انت عيد لقلبي
+        وعيد لبداياتي من جديد
+        احبك اكثر مما تقدر تفهم
+        واكثر مما اقدر اشرح
+
+        ان شاءالله ذي السنه
+        وكل السنوات الجايه
+        تكون سنوات خير وحب ونجاح
+
+        كل عام وانت قردوني
+        وكل عام وانا احبك اكثر
+        </p>
+    </div>
+
+<script>
+document.getElementById("passInput").addEventListener("keyup", function(e) {
+    if (e.key === "Enter") {
+        if (this.value === "us") {
+            document.getElementById("passwordScreen").style.display = "none";
+            document.getElementById("message").classList.remove("hidden");
+            document.getElementById("bgMusic").play();
+        } else {
+            this.style.border = "1px solid red";
+        }
+    }
+});
+</script>
+
+</body>
+</html>
